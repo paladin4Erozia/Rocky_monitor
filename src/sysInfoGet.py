@@ -11,7 +11,7 @@ if __name__ == '__main__':
         f.write(str(psutil.cpu_times()) + "\n")
     with open(r'Info/SysInfo.txt', 'a') as f:
         f.write("CPU using in near 10 sec:\n")
-    for x in range(1):
+    for x in range(10):
         with open(r'Info/SysInfo.txt', 'a') as f:
             f.write(str(psutil.cpu_percent(interval=1, percpu=True)) + "\n")
     with open(r'Info/SysInfo.txt', 'a') as f:
